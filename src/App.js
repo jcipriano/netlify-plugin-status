@@ -55,7 +55,7 @@ function App(){
       <tbody>
         {plugins.map((plugin, index) => (
           <tr key={index} className={plugin.changeStage + ' border-grey-900 border-b-1'}>
-            <td className='p-2'><a href={plugin.packageUrl} target='_blank'>{plugin.name}</a></td>
+            <td className='p-2'><a href={plugin.packageUrl} target='_blank' rel="noreferrer noopener">{plugin.name}</a></td>
             <td className='p-2'>{plugin.pluginVersion}</td>
             <td className='p-2'>{plugin.npmVersion}</td>
             <td className='p-2'>{plugin.changeStage}</td>
